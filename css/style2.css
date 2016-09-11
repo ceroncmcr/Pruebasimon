@@ -1,32 +1,33 @@
 
 body{
-	background-image: url("../img/fondo3.jpg");
+	background-image: url("../img/fondo.jpg");
 	background-size: 100%;
 }
 header{
 	width: 100%;
-	background-color: black;
-	color: white;
+	
+	color: black;
 	height: 200px;
 	margin-top: 0px;
 
 }
 
-
-
+.iti{
+	width: 17%;
+	height: 17%;
+	float: left;
+}
+.div{
+	font-size: 50px;
+	margin-right: 0%;
+	float: right;
+}
 .div1{
 	font-size: 50px;
-	margin-left: 30%;
-	
+	margin-right: 23%;
+	float: right;
 	}
-
-
-.div2{
-	font-size: 40px;
-	margin-left: 25%;
-	
-}
-.div2:hover{
+.div1:hover{
 	animation-name:animacion2;
 	animation-duration:1s;
 	
@@ -38,15 +39,25 @@ header{
 @keyframes animacion2{
 	0%{
 		transform:scale(1);
+		.div{
+			margin-top: 
+		}
 	}
 	50%{
-		font-size: 60px; margin-left:15%;
+		font-size: 60px; margin-right:20%;
 	}
 	100%{
 		transform:scale(1)
 	}
 	
 }
+
+.div2{
+	font-size: 40px;
+	margin-right: 15%;
+	float: right;
+}
+
 
 
 nav {
@@ -59,6 +70,7 @@ nav {
 	font-weight: bold;
 	text-shadow: 1% 1% 0% #000;
 	padding: 0.1% 1.2%;
+	border-radius: 10px;
 }
 
 nav ul {
@@ -70,7 +82,7 @@ nav ul li {
 	margin: 0px 1%;
 }
 nav ul a li {
-	text-decoration: none;ss
+	text-decoration: none;
 	padding: .0em 1%;
 	
 	display: block;
@@ -83,12 +95,19 @@ nav li:hover{
 	background-color: #8D8B90;
 	padding: 1%;
 }
+
+nav ul.menu ul.submenu{
+	display: none;
+} 
+
+
 div#contenido{
 	width: 60%;
-	height: 350px;
+	height: 500px;
 	border-style: solid;
-	margin-top: 0%;
+	margin-top: 1%;
 	float: right;
+	border-radius: 10px;
 }
 
 div#contenido p {
@@ -101,10 +120,14 @@ div#contenido p {
 	text-align: center;
 }
 div#contenido2{
-	width: 33%;
-	height: 350px;
+	width:38%;
+	height: 1000px;
 	border-style: solid;
 	margin-top: 1%;
+	float: left;
+	clear: left;
+	background-color: #403F3F;
+	border-radius: 10px;
 }
 
 div#contenido2 p {
@@ -117,18 +140,89 @@ div#contenido2 p {
 	text-align: center;
 }
 
+div#contenido3{
+	width: 60%;
+	height: 500px;
+	border-style: solid;
+	float: right;
+	border-radius: 10px;
+}
+
+div#contenido3 p {
+	font-size: 20px;
+	margin-top: 0px;
+	font-weight: bold;
+	width: 100%;
+	background-color: #403F3F;
+	color:white;
+	text-align: center;
+}
+div#contenido2 .enlaces{
+	text-decoration: none;
+}
+div#contenido2 p:hover{
+	background-color: #8D8B90;
+}
+
+div#body{
+	margin: 40px auto;
+	width: 100%;
+	min-height: 50px;
+	background-color:red;
+	overflow: hidden;
+	border-radius: 5px;
+}
+div.subapartado{
+	width: 100%;
+	min-height:50px;
+	background-color: green;
+
+}
+div.titulo{
+	width: 100%;
+	height: 50px;
+	background-color: #8D8B90;
+	overflow: hidden;
+	border-bottom: 1px solid #8D8B90;
+}
+p.titulo{
+	margin: 13px;
+	color: white;
+}
+
+div.info{
+	width: 100%;
+	height:0px;
+	background-color:#f5f5f5;
+	overflow: hidden;
+	-webkit-transition: height 0.2s; 
+}
+
+p.info{
+	margin: 20px;
+	text-align: center;
+	color:#4f4f4f;
+}
+div.subapartado:hover div.info{
+	height: 180px;
+}s
+
+
 footer {
 	margin: 20px 0px 0px 0px;
 	width: 100%;
 	background-color: #333;
 	padding: 15px 0px;
+	clear: both;
+	border-radius: 10px;s
 }
 
 #pie {
-	width: 810px; height: 82px;
+	width: 98%; height: 82px;
 	background-color: #333;
 	margin: 0px auto;
 	padding: 5px 10px;
+	border-radius: 10px;s
 }
 
 #pie img {
